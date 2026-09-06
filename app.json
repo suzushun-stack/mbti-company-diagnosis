@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "company-match-app",
+    "name": "MBTI風オススメ企業診断",
     "slug": "company-match-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -11,7 +11,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#D9E8DE",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -20,6 +20,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "experiments": {
+      "baseUrl": "/mbti-company-diagnosis"
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
