@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import {
+  Image,
   Pressable,
   SafeAreaView,
   ScrollView,
@@ -23,6 +24,8 @@ import AdSlot from './components/AdSlot';
 import AffiliateLink from './components/AffiliateLink';
 import { AFFILIATE_ITEMS } from './data/affiliates';
 import { COLORS } from './theme';
+
+const HERO_IMAGE = require('./assets/illustrations/hero-businessman.png');
 
 type Screen = 'intro' | 'quiz' | 'ad' | 'result';
 const AD_WAIT_SECONDS = 5;
@@ -104,6 +107,7 @@ export default function App() {
           <Text style={styles.disclaimer}>
             ※ 診断結果は自己分析のきっかけとして使う簡易的なものです。実際の企業研究や説明会参加も忘れずに。
           </Text>
+          <Image source={HERO_IMAGE} style={styles.heroImage} resizeMode="contain" />
           <Pressable style={styles.primaryButton} onPress={startQuiz}>
             <Text style={styles.primaryButtonText}>診断をはじめる</Text>
           </Pressable>
@@ -273,6 +277,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginBottom: 36,
     lineHeight: 18,
+  },
+  heroImage: {
+    width: 180,
+    height: 180,
+    alignSelf: 'center',
+    marginBottom: 20,
   },
   primaryButton: {
     backgroundColor: COLORS.yellow,
