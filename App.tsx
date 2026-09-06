@@ -21,6 +21,8 @@ import { TYPE_PROFILES, getTypeCode } from './data/types';
 import ProgressBar from './components/ProgressBar';
 import AxisBar from './components/AxisBar';
 import AdSlot from './components/AdSlot';
+import AffiliateLink from './components/AffiliateLink';
+import { AFFILIATE_ITEMS } from './data/affiliates';
 import { COLORS } from './theme';
 
 type Screen = 'intro' | 'quiz' | 'ad' | 'result';
@@ -197,6 +199,18 @@ export default function App() {
                 </View>
               </View>
             ))}
+
+            <Text style={styles.resultSectionTitle}>こんなサービスもチェック</Text>
+            <View style={styles.affiliateSection}>
+              {AFFILIATE_ITEMS.map((item) => (
+                <AffiliateLink
+                  key={item.title}
+                  href={item.href}
+                  title={item.title}
+                  description={item.description}
+                />
+              ))}
+            </View>
 
             <Pressable style={styles.primaryButton} onPress={backToIntro}>
               <Text style={styles.primaryButtonText}>トップに戻る</Text>
@@ -438,5 +452,9 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: COLORS.ink,
     lineHeight: 20,
+  },
+  affiliateSection: {
+    gap: 12,
+    marginBottom: 32,
   },
 });
