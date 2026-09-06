@@ -4,7 +4,7 @@ import { COLORS } from '../theme';
 interface AxisBarProps {
   leftLabel: string;
   rightLabel: string;
-  value: number; // -3..3
+  value: number; // -2..2
 }
 
 const MIN = -2;
@@ -38,9 +38,9 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   label: {
+    fontFamily: 'ZenKakuGothicNew_500Medium',
     fontSize: 12,
     color: COLORS.inkMuted,
-    fontFamily: 'ZenMaruGothic_500Medium',
     maxWidth: '48%',
   },
   track: {
@@ -55,21 +55,18 @@ const styles = StyleSheet.create({
     width: 1,
     height: 12,
     top: -3,
-    backgroundColor: COLORS.cardBorder,
+    backgroundColor: COLORS.ink,
+    opacity: 0.3,
   },
   marker: {
     position: 'absolute',
-    width: 16,
-    height: 16,
-    borderRadius: 8,
-    backgroundColor: COLORS.accentRed,
-    marginLeft: -8,
-    top: -5,
-    borderWidth: 2,
-    borderColor: '#fff',
-    shadowColor: '#000',
-    shadowOpacity: 0.15,
-    shadowRadius: 2,
-    shadowOffset: { width: 0, height: 1 },
+    width: 18,
+    height: 18,
+    borderRadius: 9,
+    backgroundColor: COLORS.ink,
+    marginLeft: -9,
+    top: -6,
+    borderWidth: 3,
+    borderColor: COLORS.yellow,
   },
 });

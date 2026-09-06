@@ -28,14 +28,14 @@ const styles: Record<string, CSSProperties> = {
   card: {
     display: 'block',
     backgroundColor: COLORS.card,
-    border: `1px solid ${COLORS.cardBorder}`,
+    border: `2px solid ${COLORS.cardBorder}`,
     borderRadius: 16,
     padding: 16,
     textDecoration: 'none',
   },
   title: {
     display: 'block',
-    fontFamily: 'ZenMaruGothic_700Bold, sans-serif',
+    fontFamily: 'ZenKakuGothicNew_700Bold, sans-serif',
     fontWeight: 700,
     fontSize: 15,
     color: COLORS.ink,
@@ -43,6 +43,7 @@ const styles: Record<string, CSSProperties> = {
   },
   description: {
     display: 'block',
+    fontFamily: 'ZenKakuGothicNew_500Medium, sans-serif',
     fontSize: 13,
     color: COLORS.inkMuted,
     lineHeight: '18px',

@@ -21,18 +21,19 @@ export default function AffiliateLink({ href, title, description }: AffiliateLin
 const styles = {
   card: {
     backgroundColor: COLORS.card,
-    borderWidth: 1,
+    borderWidth: 2,
     borderColor: COLORS.cardBorder,
     borderRadius: 16,
     padding: 16,
   },
   title: {
-    fontFamily: 'ZenMaruGothic_700Bold',
+    fontFamily: 'ZenKakuGothicNew_700Bold',
     fontSize: 15,
     color: COLORS.ink,
     marginBottom: 4,
   },
   description: {
+    fontFamily: 'ZenKakuGothicNew_500Medium',
     fontSize: 13,
     color: COLORS.inkMuted,
     lineHeight: 18,

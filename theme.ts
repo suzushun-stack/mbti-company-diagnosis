@@ -1,14 +1,15 @@
 export const COLORS = {
-  gradientTop: '#D9E8DE',
-  gradientBottom: '#F5DCB2',
-  ink: '#0E2E31',
-  inkMuted: '#4B655F',
-  card: '#FFFCF5',
-  cardBorder: '#E8DFC7',
-  accentRed: '#BE4230',
-  accentGold: '#B9862F',
-  track: 'rgba(14, 46, 49, 0.12)',
+  bg: '#FFFCF2',
+  yellow: '#FFD400',
+  ink: '#1A1A16',
+  inkMuted: '#6B6656',
+  card: '#FFFFFF',
+  cardBorder: '#1A1A16',
+  badgeBg: '#1A1A16',
+  badgeText: '#FFD400',
+  track: 'rgba(26, 26, 22, 0.1)',
 };
 
-export const FONT_HEADING = 'ZenMaruGothic_700Bold';
-export const FONT_HEADING_BLACK = 'ZenMaruGothic_900Black';
+export const FONT_HEADING = 'ZenKakuGothicNew_700Bold';
+export const FONT_HEADING_BLACK = 'ZenKakuGothicNew_900Black';
+export const FONT_BODY = 'ZenKakuGothicNew_500Medium';

@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.card,
   },
   label: {
+    fontFamily: 'ZenKakuGothicNew_500Medium',
     color: COLORS.inkMuted,
     fontSize: 13,
   },
